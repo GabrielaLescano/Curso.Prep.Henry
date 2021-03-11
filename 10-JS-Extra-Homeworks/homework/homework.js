@@ -10,6 +10,7 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  return Object.entries(objeto);
 }
 
 
@@ -18,6 +19,16 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let stringObject = {};
+  string.split("").forEach( char =>{
+    if(!stringObject[char]){
+      stringObject[char] = 1
+    } else {
+      stringObject[char] +=1
+    }
+  });
+  return stringObject;
+  
 }
 
 
@@ -26,6 +37,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+    let upper = []; 
+    let lower = [];
+    let string = s.split("");
+    for (i = 0; i < string.length; i++){
+      if (string[i] == string[i].toUpperCase()){              
+      upper.push(string[i]);
+     }
+      if (string[i] == string[i].toLowerCase()){
+       lower.push(string[i]);
+       }
+    }
+    return upper.join("").concat(lower.join(""));
 }
 
 
@@ -35,6 +58,11 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  let string = [];
+  let sp = str.split(" ");
+  sp.forEach(char =>{
+    return sp.reverse();
+  })
 } 
 
 
@@ -66,6 +94,8 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  let newArray = [];
+
 }
 
 

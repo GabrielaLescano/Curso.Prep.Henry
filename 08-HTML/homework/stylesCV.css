@@ -1,0 +1,26 @@
+body {
+
+    background-color: whitesmoke;
+    
+}
+    #presentacion{
+        height: 550px;
+        width: 1000px;
+        background-color: bisque;
+        border: 3px double lightskyblue;
+        margin: 0 auto;
+        font-family: Verdana;
+    }
+
+    .dClass{
+        height: 150px;
+        width: 1000px;
+        background-color: bisque;
+        border: 3px double lightskyblue;
+        margin: 0 auto;
+        font-family: Verdana;
+      }
+
+    h1, h3, p, li{
+        color:rgb(92, 105, 117);
+    }
